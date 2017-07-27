@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="app.atr.mobitribe.com.app_time_recorder">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".jobscheduler.App"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".screens.AppUsageStatisticsActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".screens.LoginActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".screens.DeviceInfoActivtiy"></activity>
+
+        <receiver
+            android:name=".jobscheduler.JobFactory$AddReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.evernote.android.job.ADD_JOB_CREATOR" />
+            </intent-filter>
+        </receiver>
+        <!-- android:priority="0" -->
+        <!--<receiver android:name=".recievers.UnInstallerReceiver">-->
+            <!--<intent-filter>-->
+
+                <!--&lt;!&ndash; <action android:name="android.intent.action.QUERY_PACKAGE_RESTART" /> &ndash;&gt;-->
+                <!--<action android:name="android.intent.action.PACKAGE_FULLY_REMOVED" />-->
+                <!--&lt;!&ndash; android.intent.action.QUERY_PACKAGE_RESTART &ndash;&gt;-->
+                <!--&lt;!&ndash; android.intent.action.PACKAGE_REMOVED &ndash;&gt;-->
+                <!--<data android:scheme="package" />-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+        <!--<receiver android:name=".screens.TestActivity$DeviceAdmin"-->
+            <!--android:label="@string/sample_device_admin2"-->
+            <!--android:description="@string/sample_device_admin_description2"-->
+            <!--android:permission="android.permission.BIND_DEVICE_ADMIN">-->
+            <!--<meta-data android:name="android.app.device_admin"-->
+                <!--android:resource="@xml/device_admin_sample" />-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <service android:name=".backgroundServices.LocationService" />
+
+        <activity android:name=".screens.TestActivity">
+
+        </activity>
+    </application>
+
+</manifest>

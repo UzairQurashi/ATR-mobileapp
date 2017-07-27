@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+ Copyright 2014 The Android Open Source Project
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<resources>
+    <string name="open_app_usage_setting">Open Apps with usage access settings</string>
+    <string name="last_time_used">"Last time used: "</string>
+    <string name="time_span">"Time span: "</string>
+    <string name="explanation_access_to_appusage_is_not_enabled">Failed to retrieve app usage
+        statistics. You may need to enable access
+        for this app through Settings > Security > Apps with usage access
+    </string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">Username should have atleast 6 characters</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">Invalid email and password</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="internet_connectivity">Internet connectivity problem</string>
+    <string name="some_thing_went_wrong">Something went wrong, Please try again</string>
+    <string name="app_name">ATR</string>
+    <string name="sign_up">Sign up</string>
+    <string name="registration">If you haven\'t Signed up yet, click here!</string>
+    <string name="login">If you already have account, click here!</string>
+    <string name="atr">ATR</string>
+    <string name="pass_mismatch">Password Mismatch!</string>
+    <string name="gender_must_be_selected">Gender must be selected.</string>
+</resources>
