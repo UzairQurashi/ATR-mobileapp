@@ -27,6 +27,7 @@ public class App extends Application {
 //        IntentFilter filter = new IntentFilter();
 //        filter.addAction("android.intent.action.QUERY_PACKAGE_RESTART");
 //       // android.intent.action.QUERY_PACKAGE_RESTART
+
         //registerReceiver(new UnInstallerReceiver(),filter);
     }
 

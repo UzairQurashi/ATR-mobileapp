@@ -36,6 +36,7 @@
     <color name="job_status_shortlisted_color">#aac902</color>
     <color name="job_status_yapped_color">#aac902</color>
     <color name="job_status_job_closed">#DF302F</color>
+    <color name="primary_red">#C90000</color>
     <color name="screen_background_dark_transparent">#80000000</color>
     <color name="white">#FFFFFF</color>
     <!-- dots inactive colors -->

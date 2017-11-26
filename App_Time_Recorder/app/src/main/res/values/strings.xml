@@ -46,4 +46,5 @@
     <string name="gender_must_be_selected">Gender must be selected.</string>
     <string name="sample_device_admin2">device admin</string>
     <string name="sample_device_admin_description2">device admin sample app</string>
+    <string name="rationale_location">Needs location runtime permission</string>
 </resources>

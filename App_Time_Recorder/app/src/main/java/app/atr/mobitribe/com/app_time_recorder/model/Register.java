@@ -21,6 +21,7 @@ public class Register {
     private String age="20";
     private String education="bachelors";
     private String sector="Sec 10";
+    private String occupation="php developer";
 
 
     public String getCellular_network() {
@@ -59,7 +60,13 @@ public class Register {
     public String getFirst_name() {
 return first_name;
 }
-
+//    public String getSub_admin_id() {
+//        return sub_admin_id;
+//    }
+//
+//    public void setSub_admin_id(String sub_admin_id) {
+//        this.sub_admin_id = sub_admin_id;
+//    }
 public void setFirst_name(String first_name) {
 this.first_name = first_name;
 }

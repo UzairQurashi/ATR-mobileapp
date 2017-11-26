@@ -30,9 +30,11 @@
 
     <style name="Widget.SampleMessageTile">
         <item name="android:background">@drawable/tile</item>
-        <item name="android:shadowColor">#7F000000</item>
+        <item name="android:shadowColor">@color/primary_red</item>
         <item name="android:shadowDy">-3.5</item>
         <item name="android:shadowRadius">2</item>
     </style>
+    <!--<item name="android:shadowColor">#7F000000</item>-->
+
 
 </resources>

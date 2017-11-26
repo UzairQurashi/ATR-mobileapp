@@ -10,10 +10,12 @@ import app.atr.mobitribe.com.app_time_recorder.model.LoginResponse;
 import app.atr.mobitribe.com.app_time_recorder.model.Register;
 import app.atr.mobitribe.com.app_time_recorder.model.Response;
 import app.atr.mobitribe.com.app_time_recorder.model.UserLocation;
+import app.atr.mobitribe.com.app_time_recorder.model.responses.Companies;
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.FieldMap;
 import retrofit2.http.FormUrlEncoded;
+import retrofit2.http.GET;
 import retrofit2.http.POST;
 
 /**
@@ -39,6 +41,9 @@ public interface WebServices {
     /*EMployer Location tracking*/
     @POST(ApiEndPoints.LOCATION_LOGS)
     Call<Response> postUserLocation(@Body UserLocation userLocation);
+    /*Get sub admins*/
+    @GET(ApiEndPoints.GET_ALL_COMPANIES)
+    Call<Companies> getAllCompanies();
 
 
 

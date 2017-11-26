@@ -14,4 +14,5 @@ public class ApiEndPoints {
     static final String LOCATION_LOGS = "/trackingLog";
 
 
+    public static final String GET_ALL_COMPANIES ="/subadmin";
 }
